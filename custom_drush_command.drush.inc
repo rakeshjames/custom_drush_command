@@ -16,6 +16,7 @@ function custom_drush_command_drush_command() {
     'drupal dependencies' => ['custom_drush_command'],
     'aliases' => ['say:hello'],
   ];
+  return $items;
 }
 
 /**
@@ -24,5 +25,5 @@ function custom_drush_command_drush_command() {
  *   drush_{module_name}_{item_id_for_command}()
  */
 function drush_custom_drush_command_say_hello($name = '') {
-  drush_print('Hello' . $name . '!');
+  drush_print('Hello ' . $name . ' !');
 }
