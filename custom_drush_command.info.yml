@@ -1,0 +1,5 @@
+name: Custom Drush Command
+type: module
+description: Example module for how to create the custom drush commands from the custom module.
+core: 8.x
+package: Examples
